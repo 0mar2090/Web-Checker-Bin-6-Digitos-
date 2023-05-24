@@ -1,0 +1,109 @@
+body {
+    line-height: 1.25;
+    color: hsl(0deg 77% 47%);
+   /*font-family: 'VT323', monospace;*/
+   font-family: 'Frijole', cursive;
+    font-size: 12px;
+    background: #000;
+   background-image: url(img/iot.jpg)repeat 0px 0px;
+  background-size: cover;
+}
+
+button {
+  position: relative;
+  background: #bf3232;
+  border: 0;
+  padding: 14px 42px;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.2em;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 200%;
+  height: 100%;
+  transform: skewX(-20deg);
+  background-image: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+}
+button:hover:after {
+  animation: shine 1.6s ease;
+}
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+form p { position: relative; }
+label { 
+  position: absolute;
+  left:-9999px;
+  text-indent: -9999px;
+}
+input {
+  display: block;
+  width: 350px;
+  height: 10px;
+  padding: 34px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin-bottom: 5px;
+  border: 1px solid #e5e5e5;
+  border-bottom: 2px solid #ddd;
+  background: #f2f2f2;
+  color: #555;
+  border-radius: 4px;
+}
+
+.form-control {
+    display: block;
+    width: 30%;
+    height: 30%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+} 
+
+
+
+header .categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header .categorias a {
+  color: #9B9B9B;
+  margin: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header .categorias a.activo {
+  color: #000;
+}
+.cate{
+padding: 19px 12px;
+
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
